@@ -1,0 +1,927 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Social Medial icon library CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mary Elizabeth R</title>
+   </head>
+
+
+
+
+   <body>
+
+   <!--header start-->
+<header class="header">
+    <div class="content">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="./images/logoy.png" alt="">
+            </a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                <div class="dropdown">
+            <a href="#featured" class="nav-link">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#oil">Facial Oils</a>
+                        <a href="#soap">Soap</a>
+                        <a href="#toner">Toners</a>
+                        <a href="#facial">Facial Wash</a>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="document.getElementById('checkout').style.display='block'" class="nav-link">My cart</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <!--HomePage-->
+    <div class="home">
+        <div class="content">
+            <div class="main-heading">
+                <h1 class="title">Mary Elizabeth R</h1>
+                <h2 class="subtitle">Organic Skin Care</h2>
+            </div>
+            <a href="#featured" class="button btn-gradient">Explore now</a>
+
+            </div>
+        </div>
+    </div>
+
+<!--featured products-->
+
+    <section class="featured-product" id="featured">
+        <div class="content">
+            <h5 class="section-head1" >
+                <span class="heading" > Featured Products</span>
+                <span class="sub-heading"> Affordable Skin Essentials</span>
+            </h5>
+            <!--oil featured-->
+            <div class="grid item-grid">
+                <div class="grid-item ">
+                    <div class="image-wrap">
+                        <img class="item-image" src="./images/oil.png" alt="">
+                        <h5 class="item-name">Facial oil</h5>
+                    </div>
+                    <div >
+
+                        <p class="paragraph3">Our Facial Oils are produced the traditional cold-pressed way. Cold-pressed oils are extracted from plant seeds and nuts. These organic oils are rich in fatty acids, vitamins, and nutrients that make them beneficial for skin care.
+                        </p>
+                        <a href="#oil"class="button item-btn">click here &rarr;</a>
+                    </div>
+                </div>
+
+                <!--soap featured-->
+                <div class="grid-item ">
+                    <div class="image-wrap">
+                        <img class="item-image" src="./images/soap1.png" alt="">
+                        <h5 class="item-name">Soap</h5>
+                    </div>
+                    <div>
+
+                        <p class="paragraph3">Our Face and Body Organic Soaps are made with various plant extracts and carrier oils that make them a must-try beauty haul.
+
+                            These colorful bunch are great for cleansing and nourishing the skin.
+
+                            When using these bars to cleanse the face, it is advisable to cut them first in to small pieces for extra hygiene.
+                        </p>
+                        <a href="#soap"class="button item-btn">click here &rarr;</a>
+                    </div>
+                </div>
+
+                <!--toner featured-->
+                <div class="grid-item ">
+                    <div class="image-wrap">
+                        <img class="item-image" src="./images/toner.png" alt="">
+                        <h5 class="item-name">Toner</h5>
+                    </div>
+                    <div>
+                        <p class="paragraph3">Toners provide extra cleansing to the surface of the pores after washing. They wash off excess makeup, dirt, and oil from the skin's surface.                            Using toners before a facial oil prevents clogging.
+                        </p>
+                        <a href="#toner"class="button item-btn">click here &rarr;</a>
+                    </div>
+                </div>
+
+                <!--facial featured-->
+                <div class="grid-item">
+                    <div class="image-wrap">
+                        <img class="item-image" src="./images/facial_wash.png" alt="">
+                        <h5 class="item-name">Facial Wash</h5>
+                    </div>
+                    <div>
+
+                        <p class="paragraph3">Our hydrating Facial Cleansers do more than just clean the skin. It provides gentle nourishment using organic and mild ingredients.
+
+                            Facial cleansers provide extra hygiene when cleansing.
+                        </p>
+                        <a href="#facial"class="button item-btn">click here &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--oil products-->
+
+
+    <section class="product-background" id="oil">
+        <div class="content" >
+          <h5 class="section-head">
+              <span class="heading">Facial Oils</span>
+          </h5>
+            <div class="grid">
+                <div class="grid-item featured-item">
+                    <img src="./images/oil1.png" alt="" class="item-img">
+                    <h5 class="products-name">Avocado Oil</h5>
+                    <span class="item-price-price">Php. 115 - 50ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('oilModal1').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+                <div id="oilModal1"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('oilModal1').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/oil1.png" alt="" class="item-img1">
+                            <h5 class="products-name">Avocado Oil</h5>
+                            <span class="item-price">Php. 115 - 50ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--oil2 products-->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/oil2.png" alt="" class="item-img">
+                    <h5 class="products-name">CarrotSeed Oil</h5>
+                    <span class="item-price">Php. 150 - 50ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('oilModal2').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+
+
+                <div id="oilModal2"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('oilModal2').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/oil2.png" alt="" class="item-img1">
+                            <h5 class="products-name">CarrotSeed Oil</h5>
+                            <span class="item-price">Php. 150 - 50ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                      </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--oil3-->
+                <div class="grid-item featured-item">
+                    <img src="./images/oil3.png" alt="" class="item-img">
+                    <h5 class="products-name">Jojoba Oil</h5>
+                    <span class="item-price">Php. 150 - 50ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('oilModal3').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="oilModal3"  class="modal">
+            <div class="modal-content">
+                <span onclick="document.getElementById('oilModal3').style.display='none'"
+                      class="close">&times;</span>
+                <div class="offer-content1">
+
+                </div>
+                <div class="grid-item featured-item">
+                    <img src="./images/oil3.png" alt="" class="item-img1">
+                    <h5 class="products-name">Jojoba Oil</h5>
+                    <span class="item-price">Php. 150 - 50ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                            </button>
+                    </div>
+                </div>
+                <br>
+                <div class="grid-item2">
+                    <h5 class="item-name1">Ingredients:</h5>
+                    <p>
+                        Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                        Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                    </p>
+                    <br>
+                    <h5 class="item-name1">Direction</h5>
+                    <p>
+                        A patch test is a method done to determine if a product suits your skin.
+                        <br>
+                        To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                        No other products should be applied when doing a patch test.
+                        Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+
+    <!--Soap Products -->
+
+    <section class="product-background" id="soap">
+        <div class="content">
+            <h5 class="section-head">
+                <span class="heading">Soaps</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-item">
+                    <img src="./images/soap1.png" alt="" class="item-img">
+                    <h5 class="products-name">Avocado Soap</h5>
+                    <span class="item-price">Php. 110 - 100g</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('soapModal1').style.display='block'" class="button btn-gradient">Buy now
+                            </button>
+                        </button>
+                    </div>
+                </div>
+                <div id="soapModal1"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('soapModal1').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/soap1.png" alt="" class="item-img1">
+                            <h5 class="products-name">Avocado Soap</h5>
+                            <span class="item-price">Php. 110 - 100g</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                   </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- soap 2-->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/soap2.png" alt="" class="item-img">
+                    <h5 class="products-name">Beer Soap</h5>
+                    <span class="item-price">Php. 150 - 100g</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('soapModal2').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+                <div id="soapModal2"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('soapModal2').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/soap2.png" alt="" class="item-img1">
+                            <h5 class="products-name">Strawberry Toner</h5>
+                            <span class="item-price">Php. 215 -100ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                             </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- soap 3 -->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/soap3.png" alt="" class="item-img">
+                    <h5 class="products-name">Kendall Soap</h5>
+                    <span class="item-price">Php. 110 - 100g</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('soapModal3').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="soapModal3"  class="modal">
+                        <div class="modal-content">
+                <span onclick="document.getElementById('soapModal3').style.display='none'"
+                      class="close">&times;</span>
+                <div class="offer-content1">
+                </div>
+                <div class="grid-item featured-item">
+                    <img src="./images/soap3.png" alt="" class="item-img1">
+                    <h5 class="products-name">Kendall Soap</h5>
+                    <span class="item-price">Php. 110 - 100g</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                           </button>
+                    </div>
+                </div>
+                <br>
+                <div class="grid-item2">
+                    <h5 class="item-name1">Ingredients:</h5>
+                    <p>
+                        Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                        Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                    </p>
+                    <br>
+                    <h5 class="item-name1">Direction</h5>
+                    <p>
+                        A patch test is a method done to determine if a product suits your skin.
+                        <br>
+                        To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                        No other products should be applied when doing a patch test.
+                        Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--toner products-->
+
+    <section class="product-background" id="toner">
+        <div class="content">
+            <h5 class="section-head">
+                <span class="heading">Toner</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-item">
+                    <img src="./images/toner1.png" alt="" class="item-img">
+                    <h5 class="products-name">Strawberry Toner</h5>
+                    <span class="item-price">Php. 215 -100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('tonerModal1').style.display='block'" class="button btn-gradient">Buy now
+                          </i> </span></button>
+                        </button>
+                    </div>
+                </div>
+                <div id="tonerModal1"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('tonerModal1').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/toner1.png" alt="" class="item-img1">
+                            <h5 class="products-name">Strawberry Toner</h5>
+                            <span class="item-price">Php. 215 -100ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                  </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- toner2-->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/toner2.png" alt="" class="item-img">
+                    <h5 class="products-name">Tea Tree Toner</h5>
+                    <span class="item-price">Php. 180 - 100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('tonerModal2').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+                <div id="tonerModal2"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('tonerModal2').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/toner2.png" alt="" class="item-img1">
+                            <h5 class="products-name">Tea Tree Toner</h5>
+                            <span class="item-price">Php. 180 - 100ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                    </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- toner 3 -->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/toner3.png" alt="" class="item-img">
+                    <h5 class="products-name">Tomato Toner</h5>
+                    <span class="item-price">Php. 160 - 100ml </span>
+                    <div class="cart">
+        <button onclick="document.getElementById('tonerModal3').style.display='block'" class="button btn-gradient">Buy now
+            </button>
+                        </div>
+                </div>
+             </div>
+        </div>
+        <div id="tonerModal3"  class="modal">
+            <div class="modal-content">
+                <span onclick="document.getElementById('tonerModal3').style.display='none'"
+                      class="close">&times;</span>
+                <div class="offer-content1">
+                </div>
+                <div class="grid-item featured-item">
+                    <img src="./images/toner3.png" alt="" class="item-img1">
+                    <h5 class="products-name">Tomato Toner</h5>
+                    <span class="item-price">Php. 160 - 100ml </span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                            </button>
+                    </div>
+                </div>
+                <br>
+                <div class="grid-item2">
+                    <h5 class="item-name1">Ingredients:</h5>
+                    <p>
+                        Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                        Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                    </p>
+                    <br>
+                    <h5 class="item-name1">Direction</h5>
+                    <p>
+                        A patch test is a method done to determine if a product suits your skin.
+                        <br>
+                        To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                        No other products should be applied when doing a patch test.
+                        Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--facial products-->
+
+    <section class="product-background" id="facial">
+        <div class="content">
+            <h5 class="section-head">
+                <span class="heading">Facial Wash</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-item">
+                    <img src="./images/facial_wash1.png" alt="" class="item-img">
+                    <h5 class="products-name">Milk Facial Wash</h5>
+                    <span class="item-price">Php. 295 - 100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('facialModal1').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+                <div id="facialModal1"  class="modal">
+                    <div class="modal-content">
+                <span onclick="document.getElementById('facialModal1').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+
+                        </div>
+
+                        <div class="grid-item featured-item">
+                            <img src="./images/facial_wash1.png" alt="" class="item-img1">
+                            <h5 class="products-name">Milk Facial Wash</h5>
+                            <span class="item-price">Php. 295 - 100ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                 </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                               <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- facial2-->
+
+                <div class="grid-item featured-item">
+                    <img src="./images/facial_wash2.png" alt="" class="item-img">
+                    <h5 class="products-name">Coffee Facial Wash</h5>
+                    <span class="item-price">Php. 295 - 100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('facialModal2').style.display='block'" class="button btn-gradient">Buy now
+                        </button>
+                    </div>
+                </div>
+              <div id="facialModal2"  class="modal">
+                   <div class="modal-content">
+                <span onclick="document.getElementById('facialModal2').style.display='none'"
+                      class="close">&times;</span>
+                        <div class="offer-content1">
+                        </div>
+                        <div class="grid-item featured-item">
+                            <img src="./images/facial_wash2.png" alt="" class="item-img1">
+                            <h5 class="products-name">Coffee Facial Wash</h5>
+                            <span class="item-price">Php. 295 - 100ml</span>
+                            <div class="cart">
+                                <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                                   </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="grid-item2">
+                            <h5 class="item-name1">Ingredients:</h5>
+                            <p>
+                                Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                                Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                            </p>
+                            <br>
+                            <h5 class="item-name1">Direction</h5>
+                            <p>
+                                A patch test is a method done to determine if a product suits your skin.
+                                <br>
+                                To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                                No other products should be applied when doing a patch test.
+                                Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="grid-item featured-item" >
+                    <img src="./images/facial_wash3.png" alt="" class="item-img">
+                    <h5 class="products-name">Rosehip Facial Wash </h5>
+                    <span class="item-price">Php. 295 - 100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('myModal3').style.display='block'" class="button btn-gradient">Buy now
+                           </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- facial 3 -->
+
+
+        <div id="myModal3"  class="modal">
+            <div class="modal-content">
+                <span onclick="document.getElementById('myModal3').style.display='none'"
+                      class="close">&times;</span>
+                <div class="offer-content1">
+               </div>
+                <div class="grid-item featured-item">
+                    <img src="./images/facial_wash3.png" alt="" class="item-img1">
+                    <h5 class="products-name">Roseship Facial Wash</h5>
+                    <span class="item-price">Php. 295 - 100ml</span>
+                    <div class="cart">
+                        <button onclick="document.getElementById('mycart').style.display='block'" class="button btn-gradient">Add to cart
+                          </button>
+                    </div>
+                </div>
+                <br>
+                <div class="grid-item2">
+                    <h5 class="item-name1">Ingredients:</h5>
+                    <p>
+                        Water,Coconut Oil,Glyceryl Stearate,Glycerin,Rosehip Extract,Sodium Lactate,Sugar Cane Extract,
+                        Sodium Lauryl Sulfate,Betaine,Glyceril Stearate,Carbomer,Polysorbate 60,Disodium EDTA,Rose Essential Oil
+                    </p>
+                    <br>
+                    <h5 class="item-name1">Direction</h5>
+                    <p>
+                        A patch test is a method done to determine if a product suits your skin.
+                        <br>
+                        To do a patch test, use the products on a small area of your skin - preferably the underside of the jaw.
+                        No other products should be applied when doing a patch test.
+                        Wait for 24-48 hours to see if you have a reaction. If no negative reactions occur, you're good to go!    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <h5 class="section-head">
+                <span class="heading">contact</span>
+                <span class="sub-heading">Get in touch</span>
+            </h5>
+            <div class="contact-content">
+                <div class="traveler-wrap">
+                    <img src="./images/skincare.jpg"  width="664px" alt="">
+                </div>
+                <form action="" class="form contact-form">
+                   <div class="input-group-wrap">
+                       <div class="input-group">
+                       <input type="text" class="input" placeholder="Name" required>
+                       <span class="bar"> </span>
+                   </div>
+                           <div class="input-group">
+                               <input type="email" class="input" placeholder="E-mail" required>
+                               <span class="bar"> </span>
+                           </div>
+                   </div>
+                       <div class="input-group">
+                           <input type="text" class="input" placeholder="Subject" required>
+                           <span class="bar"> </span>
+                       </div>
+                       <div class="input-group">
+                           <textarea class="input" cols="30" rows="8" placeholder="Compose" required></textarea>
+                           <span class="bar"> </span>
+                       </div>
+                    <button type="submit" onclick="document.getElementById('message').style.display='block'"  class="button btn-gradient">Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About-->
+
+    <section id="about">
+        <div class="offer-content">
+            <h5 class="section-head">
+                <span class="heading">About</span>
+                <span class="sub-heading">Service</span>
+                <br></h5>
+            <div class="container2">
+            <img class="traveler-wrap2" src="./images/rw.png" width="800px" alt="">
+        </div>
+
+        </div>
+    </section>
+</main>
+
+
+
+
+                                                          <!-- Modal -->
+   <!-- my cart -->
+   <div id="checkout"  class="modal">
+       <div class="modal-cart">
+ <span onclick="document.getElementById('checkout').style.display='none'"
+       class="close">&times;</span>
+           <div class="grid-item2">
+               <div class="col-25">
+                   <div class="container4">
+                       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
+                       <p><a href="#">Avocado Oil </a> <span class="price">Php.115</span></p>
+                       <p><a href="#">Beer Soap</a> <span class="price">Php.150</span></p>
+                       <p><a href="#">RoseShip Facial Wash</a> <span class="price">Php.295</span></p>
+
+                       <hr>
+                       <hr>
+                       <p>Total <span class="price" style="color:black"><b>Php.560</b></span></p>
+
+                   </div>
+               </div>
+               <a href="my-cart.html" class="button btn-gradient" >Checkout</a>
+           </div>
+       </div>
+   </div>
+   </div>
+
+
+    <!-- contact message -->
+
+        <div id="message"  class="modal-message">
+            <div class="modal-content-message">
+                <span onclick="document.getElementById('message').style.display='none'"
+                      class="close">&times;</span>
+                <div class="grid-item2">
+                    <h5 class="item-name1">Message sent</h5>
+                    <p>
+                        Thank you for sending a message.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+   <!-- added my cart message -->
+
+   <div id="mycart"  class="modal-message">
+       <div class="modal-content-message">
+                <span onclick="document.getElementById('mycart').style.display='none'"
+                      class="close">&times;</span>
+           <div class="grid-item2">
+               <h5 class="item-name1"> The product has been added to cart.</h5>
+               <p>
+                  Thank you!
+               </p>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- footer -->
+
+   <footer class="footer">
+       <div class="content">
+           <div class="footer-content">
+               <div class="footer-content-brand">
+                   <a href="index.html" class="logo">
+                       <img class="logo-image" src="./images/logoy.png" alt="">
+                   </a>
+
+                     <p> Mary Elizabeth R is a local brand of Organic Skin Care showcasing various holy grails made from wide varieties of plant extracts and essential oils.
+                   </p>
+               </div>
+           </div>
+               </div>
+           </div>
+       </div>
+       <div class="social-media-wrap">
+
+           <div class="social-media">
+               <a href="#" class="sm-link"><i class ="fab fa-twitter"></i></a>
+               <a href="https://web.facebook.com/maryelizabethrph" class="sm-link"><i class ="fab fa-facebook"></i></a>
+               <a href="https://www.instagram.com/maryelizabethr.ph/" class="sm-link"><i class ="fab fa-instagram"></i></a>
+               <a href="#" class="sm-link"><i class ="fab fa-pinterest"></i></a>
+           </div>
+       <p class="copyright">&copy; 2020 Mary Elizabeth R</p>
+       </div>
+   </footer>
+    <script >
+        //Selectors
+        let header = document.querySelector('.header');
+        let hamburgerMenu = document.querySelector('.hamburger-menu');
+
+        window.addEventListener('scroll', function (){
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('active',windowPosition)
+        })
+
+        hamburgerMenu.addEventListener('click', function () {
+            header.classList.toggle('menu-open');
+        })
+
+
+
+    </script>
+
+</body>
+</html>

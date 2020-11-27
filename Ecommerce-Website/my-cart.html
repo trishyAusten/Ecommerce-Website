@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Credit card icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mary Elizabeth R/My Cart</title>
+</head>
+
+
+
+
+
+    <style>
+
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+        }
+
+        .col-75 {
+            -ms-flex: 75%; /* IE10 */
+            flex: 75%;
+        }
+
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+
+        .container {
+            background-color: #de985d;
+            padding: 5px 15px 10px 10px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 15px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+        .space{
+            padding: 5rem ;
+            text-align: center;
+        }
+        .btn {
+            background-color: #540101;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            background-color: #a48250;
+        }
+
+        a {
+            color: #3e1c0a;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<!--header start-->
+<header class="header">
+    <div class="content">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="./images/logoy.png" alt="">
+            </a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="index.html" class="nav-link">Products</a>
+                        <div class="dropdown-content">
+                            <a href="index.html/oil">Facial Oils</a>
+                            <a href="index.html">Soap</a>
+                            <a href="index.html">Toners</a>
+                            <a href="index.html">Facial Wash</a>
+                        </div>
+                    </div>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="document.getElementById('checkout').style.display='block'" class="nav-link">My cart</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+<h2 class="space">Responsive Checkout Form</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="/action_page.php">
+
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <br>
+                <a onclick="document.getElementById('mycart').style.display='block'" class="btn">CONTINUE CHECK OUT</a>
+
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
+            <p><a href="#">Avocado Oil </a> <span class="price">Php.115</span></p>
+            <p><a href="#">Beer Soap</a> <span class="price">Php.150</span></p>
+            <p><a href="#">RoseShip Facial Wash</a> <span class="price">Php.295</span></p>
+
+            <hr>
+            <br>
+            <p>Total <span class="price" style="color:black"><b>Php.560</b></span></p>
+
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<div id="mycart"  class="modal-message">
+    <div class="modal-content-message">
+                <span onclick="document.getElementById('mycart').style.display='none'"
+                      class="close">&times;</span>
+        <div class="grid-item2">
+            <h5 class="hotel-name1"> The item has been processed.</h5>
+            <p>
+                Thank you!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="content">
+        <div class="footer-content">
+            <div class="footer-content-brand">
+                <a href="index.html" class="logo">
+                    <img class="logo-image" src="./images/logoy.png" alt="">
+                </a>
+
+                <p> Mary Elizabeth R is a local brand of Organic Skin Care showcasing various holy grails made from wide varieties of plant extracts and essential oils.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="social-media-wrap">
+
+        <div class="social-media">
+            <a href="#" class ="fa fa-twitter"></a>
+            <a href="#"  class ="fa fa-facebook"></a>
+            <a href="#" class ="fa fa-instagram"></a>
+            <a href="#"  class ="fa fa-pinterest"></a>
+        </div>
+        <p class="copyright">&copy; 2020 Mary Elizabeth R</p>
+    </div>
+</footer>
+</html>

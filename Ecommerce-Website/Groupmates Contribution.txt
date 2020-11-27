@@ -1,0 +1,35 @@
+     
+Section: CITCS 2C
+
+
+
+
+	 Members:
+
+Pagtulingan, Trisha Anne B. 
+
+	Task:
+		- Plan the websites
+		- Created the HTML structure (Header,body,footer)
+		-  styled the Css
+		- Created the product section
+		- created the open modal section
+		- buttons of the products 
+		- debug the unnecessary codes 	
+		- Edited the video 
+		- design the footer section and About section
+	        - created the featured products		
+
+
+
+Sim, Jane April L.
+ 	
+	Task:
+		- Edited the homepage 
+		- Design the Logo and image background.
+		- created the contact form
+		- created the add to cart webpage
+		- Select what product will include
+		- video voice over
+		- styled the js	
+		- styled font/colors	
